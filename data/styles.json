@@ -1,0 +1,66 @@
+[
+  {
+    "id": "alpine",
+    "name": "Alpine Climbing",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Advanced",
+    "environment": "High mountain, mixed terrain",
+    "description": "A fast, self-sufficient style that combines rock, ice, and snow climbing over long routes, typically completed in a single push with minimal gear."
+  },
+  {
+    "id": "rock",
+    "name": "Rock Climbing",
+    "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Beginner to Advanced",
+    "environment": "Crags, cliffs, big walls",
+    "description": "Climbing exposed rock faces using hands and feet, ranging from short bouldering problems to multi-day big wall ascents."
+  },
+  {
+    "id": "ice",
+    "name": "Ice Climbing",
+    "image": "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Intermediate to Advanced",
+    "environment": "Frozen waterfalls, glaciers",
+    "description": "Ascending frozen waterfalls, ice-covered rock, and glaciers using ice axes and crampons for purchase on vertical or near-vertical ice."
+  },
+  {
+    "id": "sport",
+    "name": "Sport Climbing",
+    "image": "https://images.unsplash.com/photo-1516592066896-6f6427a1a26e?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Beginner to Intermediate",
+    "environment": "Bolted crags, gyms",
+    "description": "Climbing routes protected by permanently fixed bolts, allowing climbers to focus on movement and technique rather than placing protection."
+  },
+  {
+    "id": "trad",
+    "name": "Traditional Climbing",
+    "image": "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Intermediate to Advanced",
+    "environment": "Natural rock features",
+    "description": "Climbers place and remove their own protection in natural rock cracks and features as they ascend, leaving no permanent hardware behind."
+  },
+  {
+    "id": "bouldering",
+    "name": "Bouldering",
+    "image": "https://images.unsplash.com/photo-1583500178690-f7fd8a1d9d70?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Beginner to Advanced",
+    "environment": "Low rock, indoor gyms",
+    "description": "Short, powerful climbing sequences performed without ropes close to the ground, usually with crash pads for protection."
+  },
+  {
+    "id": "expedition",
+    "name": "Expedition Climbing",
+    "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Advanced",
+    "environment": "Remote high mountains",
+    "description": "Large, logistically complex climbs involving multiple camps, fixed ropes, and extended time at altitude, often on the world's highest peaks."
+  },
+  {
+    "id": "highaltitude",
+    "name": "High-Altitude Mountaineering",
+    "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&q=80",
+    "difficulty": "Expert",
+    "environment": "Peaks above 6,000 metres",
+    "description": "Climbing at extreme elevation where reduced oxygen, cold, and weather create severe physiological and logistical demands on the body."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  { "name": "Mount Everest", "country": "Nepal / China", "elevation": 8849, "difficulty": "Expert", "season": "April – May", "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=800&q=80" },
+  { "name": "K2", "country": "Pakistan / China", "elevation": 8611, "difficulty": "Expert", "season": "June – August", "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Denali", "country": "United States", "elevation": 6190, "difficulty": "Advanced", "season": "May – July", "image": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Mont Blanc", "country": "France / Italy", "elevation": 4808, "difficulty": "Intermediate", "season": "June – September", "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Matterhorn", "country": "Switzerland / Italy", "elevation": 4478, "difficulty": "Advanced", "season": "July – September", "image": "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Ama Dablam", "country": "Nepal", "elevation": 6812, "difficulty": "Advanced", "season": "October – November", "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Aconcagua", "country": "Argentina", "elevation": 6961, "difficulty": "Intermediate", "season": "December – February", "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Cerro Torre", "country": "Argentina / Chile", "elevation": 3128, "difficulty": "Expert", "season": "January – March", "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Mount Kilimanjaro", "country": "Tanzania", "elevation": 5895, "difficulty": "Beginner", "season": "January – March, June – October", "image": "https://images.unsplash.com/photo-1516592066896-6f6427a1a26e?auto=format&fit=crop&w=800&q=80" },
+  { "name": "Mount Cook / Aoraki", "country": "New Zealand", "elevation": 3724, "difficulty": "Advanced", "season": "December – February", "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=800&q=80" }
+]
