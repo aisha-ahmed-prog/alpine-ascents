@@ -1,0 +1,12 @@
+[
+  { "id": "e1", "category": "Clothing", "name": "Layered Insulation System", "purpose": "Regulates body temperature across changing conditions.", "importance": "Essential" },
+  { "id": "e2", "category": "Footwear", "name": "Mountaineering Boots", "purpose": "Rigid, insulated boots compatible with crampons for snow and ice.", "importance": "Essential" },
+  { "id": "e3", "category": "Navigation", "name": "GPS Device & Compass", "purpose": "Provides reliable route-finding in poor visibility.", "importance": "Essential" },
+  { "id": "e4", "category": "Climbing Equipment", "name": "Harness & Dynamic Rope", "purpose": "Core system for protection while climbing roped terrain.", "importance": "Essential" },
+  { "id": "e5", "category": "Climbing Equipment", "name": "Ice Axe & Crampons", "purpose": "Enables secure movement on snow and ice slopes.", "importance": "Essential" },
+  { "id": "e6", "category": "Emergency Gear", "name": "Satellite Communicator", "purpose": "Allows emergency contact outside of cellular coverage.", "importance": "Critical" },
+  { "id": "e7", "category": "Emergency Gear", "name": "First-Aid & Repair Kit", "purpose": "Addresses injuries and equipment failures in the field.", "importance": "Critical" },
+  { "id": "e8", "category": "Camping Equipment", "name": "Four-Season Tent", "purpose": "Withstands high winds and heavy snow loading at altitude.", "importance": "Essential" },
+  { "id": "e9", "category": "Camping Equipment", "name": "Sub-Zero Sleeping System", "purpose": "Preserves core temperature during cold overnight stops.", "importance": "Essential" },
+  { "id": "e10", "category": "Navigation", "name": "Altimeter Watch", "purpose": "Tracks elevation gain and helps confirm position on route.", "importance": "Recommended" }
+]

@@ -1,5 +1,20 @@
 [
-  { "id": "v1", "youtubeId": "sPckJEIhi5s", "title": "Understanding Alpine Objective Hazards", "description": "An overview of how experienced climbers assess risk in high mountain terrain." },
-  { "id": "v2", "youtubeId": "1La4QzGeaaQ", "title": "Basics of Glacier Travel", "description": "A short introduction to roped travel and crevasse awareness on glaciers." },
-  { "id": "v3", "youtubeId": "9No-FiEInLA", "title": "The History of Himalayan Mountaineering", "description": "A look back at the expeditions that opened the world's highest peaks to climbers." }
+  {
+    "id": "v1",
+    "youtubeId": "t9hryEy12pg",
+    "title": "Understanding Alpine Objective Hazards",
+    "description": "An overview of how experienced climbers assess risk in high mountain terrain."
+  },
+  {
+    "id": "v2",
+    "youtubeId": "1La4QzGeaaQ",
+    "title": "Basics of Glacier Travel",
+    "description": "A short introduction to roped travel and crevasse awareness on glaciers."
+  },
+  {
+    "id": "v3",
+    "youtubeId": "9No-FiEInLA",
+    "title": "The History of Himalayan Mountaineering",
+    "description": "A look back at the expeditions that opened the world's highest peaks to climbers."
+  }
 ]

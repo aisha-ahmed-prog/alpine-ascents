@@ -302,95 +302,42 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 
   /* ---------- VIDEOS ---------- */
-(async function videosInit() {
-  const grid = document.getElementById('videosGrid');
-
-  // Stop if the video container does not exist
-  if (!grid) return;
-
-  // Show loading skeletons
-  AlpineUtils.renderSkeletons(grid, 3, 260);
-
-  try {
-    // Load videos data
-    const videos = await DataLoader.load('videos');
-
-    // Create video cards
-    grid.innerHTML = videos.map((v) => `
-      <div class="col-md-6 col-lg-4">
-        <div class="video-card fade-in-up">
-
-          <!-- Video Thumbnail -->
-          <div class="video-thumb" data-yt="${v.youtubeId}">
-            <img
-              src="https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg"
-              alt="${AlpineUtils.escapeHtml(v.title)}"
-              loading="lazy"
-            >
-
-            <!-- Play Button -->
-            <div class="play-btn">
-              <i class="bi bi-play-circle-fill"></i>
+  (async function videosInit() {
+    const grid = document.getElementById('videosGrid');
+    if (!grid) return;
+    AlpineUtils.renderSkeletons(grid, 3, 260);
+    try {
+      const videos = await DataLoader.load('videos');
+      grid.innerHTML = videos.map((v) => `
+        <div class="col-md-6 col-lg-4">
+          <div class="video-card fade-in-up">
+            <div class="video-thumb" data-yt="${v.youtubeId}">
+              <img src="https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg" alt="${AlpineUtils.escapeHtml(v.title)}" loading="lazy">
+              <div class="play-btn"><i class="bi bi-play-circle-fill"></i></div>
+            </div>
+            <div class="body p-3">
+              <h3 class="h6 mb-1">${AlpineUtils.escapeHtml(v.title)}</h3>
+              <p style="font-size:0.85rem; color:var(--muted); margin:0;">${AlpineUtils.escapeHtml(v.description)}</p>
             </div>
           </div>
-
-          <!-- Video Information -->
-          <div class="body p-3">
-            <h3 class="h6 mb-1">
-              ${AlpineUtils.escapeHtml(v.title)}
-            </h3>
-
-            <p style="font-size:0.85rem; color:var(--muted); margin:0;">
-              ${AlpineUtils.escapeHtml(v.description)}
-            </p>
-          </div>
-
         </div>
-      </div>
-    `).join('');
+      `).join('');
+      observeReveal(grid);
 
-    // Animation / reveal
-    observeReveal(grid);
-
-    // Open YouTube video when thumbnail is clicked
-    grid.addEventListener('click', (e) => {
-
-      const thumb = e.target.closest('.video-thumb');
-
-      if (!thumb) return;
-
-      // Get YouTube ID
-      const ytId = thumb.getAttribute('data-yt');
-
-      // Open video in modal
-      showDetailModal(
-        '',
-        `
+      grid.addEventListener('click', (e) => {
+        const thumb = e.target.closest('.video-thumb');
+        if (!thumb) return;
+        const ytId = thumb.getAttribute('data-yt');
+        showDetailModal('', `
           <div class="ratio ratio-16x9">
-            <iframe
-              src="https://www.youtube.com/embed/${ytId}?autoplay=1"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/${ytId}?autoplay=1" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-        `,
-        true
-      );
-    });
-
-  } catch (e) {
-
-    // Show error message if videos cannot be loaded
-    AlpineUtils.renderEmptyState(
-      grid,
-      'Videos could not be loaded.',
-      'bi-exclamation-triangle'
-    );
-
-    console.error('Video loading error:', e);
-  }
-})();
+        `, true);
+      });
+    } catch (e) {
+      AlpineUtils.renderEmptyState(grid, 'Videos could not be loaded.', 'bi-exclamation-triangle');
+    }
+  })();
 
   /* ---------- LATEST DEVELOPMENTS ---------- */
   (async function developmentsInit() {

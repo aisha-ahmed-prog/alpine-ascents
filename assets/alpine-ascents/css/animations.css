@@ -1,0 +1,36 @@
+/* ============================================
+   ALPINE ASCENTS — ANIMATION HELPERS
+   ============================================ */
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-title, .hero-sub, .hero-actions, .hero-content .eyebrow {
+  opacity: 0;
+  animation: heroReveal 0.9s ease forwards;
+}
+.hero-content .eyebrow { animation-delay: 0.1s; }
+.hero-title { animation-delay: 0.28s; }
+.hero-sub { animation-delay: 0.46s; }
+.hero-actions { animation-delay: 0.62s; }
+
+@keyframes heroReveal {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal.fade .modal-dialog { transition: transform 0.35s ease, opacity 0.35s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up { opacity: 1; transform: none; transition: none; }
+  .hero-title, .hero-sub, .hero-actions, .hero-content .eyebrow {
+    opacity: 1; animation: none;
+  }
+}

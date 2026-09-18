@@ -1,8 +1,50 @@
 [
-  { "title": "Highest Mountain Above Sea Level", "holder": "Mount Everest, Nepal / China", "value": "8,849 m", "year": "—", "category": "Elevation", "country": "Nepal" },
-  { "title": "First Confirmed Ascent of Everest", "holder": "Edmund Hillary & Tenzing Norgay", "value": "29 May 1953", "year": "1953", "category": "First Ascent", "country": "New Zealand / Nepal" },
-  { "title": "First Ascent Without Supplemental Oxygen", "holder": "Reinhold Messner & Peter Habeler", "value": "Everest, 1978", "year": "1978", "category": "Style", "country": "Italy / Austria" },
-  { "title": "First to Climb All Fourteen 8,000m Peaks", "holder": "Reinhold Messner", "value": "Completed 1986", "year": "1986", "category": "Eight-Thousanders", "country": "Italy" },
-  { "title": "First Woman to Climb All Fourteen 8,000m Peaks", "holder": "Edurne Pasaban", "value": "Completed 2010", "year": "2010", "category": "Eight-Thousanders", "country": "Spain" },
-  { "title": "Number of Eight-Thousander Peaks Worldwide", "holder": "—", "value": "14 peaks", "year": "—", "category": "Geography", "country": "Nepal, Pakistan, China, India" }
+  {
+    "title": "Highest Mountain Above Sea Level",
+    "holder": "Mount Everest, Nepal / China",
+    "value": "8,849 m",
+    "year": "—",
+    "category": "Elevation",
+    "country": "Nepal"
+  },
+  {
+    "title": "First Confirmed Ascent of Everest",
+    "holder": "Edmund Hillary & Tenzing Norgay",
+    "value": "29 May 1953",
+    "year": "1953",
+    "category": "First Ascent",
+    "country": "New Zealand / Nepal"
+  },
+  {
+    "title": "First Ascent Without Supplemental Oxygen",
+    "holder": "Reinhold Messner & Peter Habeler",
+    "value": "Everest, 1978",
+    "year": "1978",
+    "category": "Style",
+    "country": "Italy / Austria"
+  },
+  {
+    "title": "First to Climb All Fourteen 8,000m Peaks",
+    "holder": "Reinhold Messner",
+    "value": "Completed 1986",
+    "year": "1986",
+    "category": "Eight-Thousanders",
+    "country": "Italy"
+  },
+  {
+    "title": "First Woman to Climb All Fourteen 8,000m Peaks",
+    "holder": "Edurne Pasaban",
+    "value": "Completed 2010",
+    "year": "2010",
+    "category": "Eight-Thousanders",
+    "country": "Spain"
+  },
+  {
+    "title": "Number of Eight-Thousander Peaks Worldwide",
+    "holder": "—",
+    "value": "14 peaks",
+    "year": "—",
+    "category": "Geography",
+    "country": "Nepal, Pakistan, China, India"
+  }
 ]

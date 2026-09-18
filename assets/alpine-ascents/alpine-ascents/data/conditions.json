@@ -1,0 +1,9 @@
+{
+  "note": "Demonstration data only — not a live weather feed.",
+  "location": "Everest Base Camp (sample)",
+  "temperature": "-12°C",
+  "wind": "35 km/h, NW",
+  "visibility": "Good, 8+ km",
+  "conditions": "Partly cloudy with light snow showers expected overnight",
+  "recommendation": "Standard high-altitude layering recommended; secure tents against overnight wind gusts."
+}

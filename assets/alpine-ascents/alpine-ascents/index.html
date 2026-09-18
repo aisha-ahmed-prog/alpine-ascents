@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alpine Ascents — Mountaineering &amp; Adventure Portal</title>
+<meta name="description" content="Alpine Ascents is a mountaineering and adventure portal covering climbing history, techniques, hazards, records, expeditions, and gear for aspiring and experienced mountaineers.">
+<meta name="keywords" content="mountaineering, climbing, alpinism, expeditions, mountain safety, climbing techniques, Everest, alpine club">
+<meta property="og:title" content="Alpine Ascents — Mountaineering & Adventure Portal">
+<meta property="og:description" content="Explore the world of mountaineering: history, techniques, hazards, records, expeditions, and gear.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M10 80 L35 30 L50 55 L65 20 L90 80 Z' fill='%230B1F2A'/%3E%3C/svg%3E">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<!-- GLightbox -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css">
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+
+<!-- Project CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader">
+  <div class="preloader-glyph"></div>
+  <div class="preloader-mark">ALPINE ASCENTS</div>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div id="scroll-progress"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-alpine navbar-expand-lg" id="mainNavbar">
+  <div class="container-fluid px-3 px-lg-5">
+    <a class="navbar-brand" href="#home">ALPINE<span> ASCENTS</span></a>
+
+    <div class="d-flex align-items-center order-lg-3">
+      <button class="nav-icon-btn" id="searchToggle" aria-label="Open search"><i class="bi bi-search"></i></button>
+      <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+      <div class="visitor-chip d-none d-md-flex">
+        <i class="bi bi-eye"></i>
+        <span>Visitors <span class="visitor-count" id="visitorCount">000,000</span></span>
+      </div>
+      <button class="navbar-toggler border-0 text-white ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list text-white fs-3"></i>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse order-lg-2" id="navbarContent">
+      <ul class="navbar-nav mx-lg-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" data-nav="home" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="about" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="history" href="#history">History</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="styles" href="#styles">Styles</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="techniques" href="#techniques">Techniques</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="sheltering" href="#sheltering">Sheltering</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="hazards" href="#hazards">Hazards</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="records" href="#records">Records</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="expeditions" href="#expeditions">Expeditions</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="gallery" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="developments" href="#developments">Developments</a></li>
+        <li class="nav-item"><a class="nav-link" data-nav="guidelines" href="#guidelines">Guidelines</a></li>
+      </ul>
+      <a href="#expeditions" class="btn btn-gold ms-lg-3 d-inline-block">Explore Expeditions</a>
+      <div class="visitor-chip d-md-none mt-2">
+        <i class="bi bi-eye"></i>
+        <span>Visitors <span class="visitor-count" id="visitorCountMobile"></span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-9">
+        <span class="eyebrow">The Art of Ascent</span>
+        <h1 class="hero-title">Beyond the<br>Summit</h1>
+        <p class="hero-sub">Explore the world of mountaineering, climbing, expeditions and the people who push beyond the limits.</p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-gold">Explore Mountaineering</a>
+          <a href="#expeditions" class="btn btn-outline-snow">View Expeditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ============ QUICK STATS ============ -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="row" id="statsStrip"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 order-lg-2">
+        <span class="eyebrow">Who Climbs, and Why</span>
+        <h2 class="section-heading">The World of Mountaineering</h2>
+        <p class="section-lede mt-3">Mountaineering is the practice of ascending mountains — a discipline that blends physical endurance, technical skill, careful judgement, and a deep respect for unpredictable terrain.</p>
+        <ul class="about-list">
+          <li><i class="bi bi-check-circle"></i><span>Physical challenge: sustained endurance, strength, and adaptation to altitude and cold.</span></li>
+          <li><i class="bi bi-check-circle"></i><span>Mental discipline: patience, risk assessment, and calm decision-making under pressure.</span></li>
+          <li><i class="bi bi-check-circle"></i><span>Exploration: reaching remote, dramatic landscapes few others ever see.</span></li>
+          <li><i class="bi bi-check-circle"></i><span>Safety culture: preparation, teamwork, and respect for the mountain's conditions.</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="about-media">
+          <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=900&q=80" alt="Climber ascending a snow ridge" loading="lazy">
+          <div class="about-card">
+            <div class="stat-value" style="color:var(--gold);">14</div>
+            <div class="stat-label" style="color:rgba(247,249,248,0.8);">Peaks above 8,000 metres worldwide</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HISTORY ============ -->
+<section id="history" class="section-pad bg-dark-section">
+  <div class="container">
+    <span class="eyebrow">Where It Began</span>
+    <h2 class="section-heading">A Journey Through the Mountains</h2>
+    <p class="section-lede mt-3">From the first Alpine summits to the modern high-altitude era, mountaineering's history is a record of ambition, tragedy, and steady progress.</p>
+    <div class="timeline" id="historyTimeline"></div>
+  </div>
+</section>
+
+<!-- ============ STYLES ============ -->
+<section id="styles" class="section-pad">
+  <div class="container">
+    <span class="eyebrow">Ways to Climb</span>
+    <h2 class="section-heading">Types &amp; Climbing Styles</h2>
+    <p class="section-lede mt-3">Mountaineering spans a wide range of disciplines, each with its own techniques, environments, and demands.</p>
+    <div class="row g-4 mt-2" id="stylesGrid"></div>
+  </div>
+</section>
+
+<!-- ============ TECHNIQUES ============ -->
+<section id="techniques" class="section-pad" style="background:#EEF3F1;">
+  <div class="container">
+    <span class="eyebrow">Skills of the Trade</span>
+    <h2 class="section-heading">Core Techniques</h2>
+    <p class="section-lede mt-3">These fundamental skills form the backbone of safe, competent mountaineering across every discipline.</p>
+    <div class="tech-tabs mt-4" id="techTabs"></div>
+    <div class="tech-detail-panel" id="techDetailPanel"></div>
+  </div>
+</section>
+
+<!-- ============ SHELTERING ============ -->
+<section id="sheltering" class="section-pad">
+  <div class="container">
+    <span class="eyebrow">Where Climbers Rest</span>
+    <h2 class="section-heading">Mountain Sheltering</h2>
+    <p class="section-lede mt-3">From alpine huts to emergency bivouacs, shelter systems are chosen to match the terrain, duration, and severity of an expedition.</p>
+    <div class="row g-4 mt-2" id="shelterGrid"></div>
+  </div>
+</section>
+
+<!-- ============ HAZARDS ============ -->
+<section id="hazards" class="section-pad bg-dark-section">
+  <div class="container">
+    <span class="eyebrow">Respect the Mountain</span>
+    <h2 class="section-heading">Hazards &amp; Safety</h2>
+    <p class="section-lede mt-3">Mountains present serious, sometimes fatal, objective hazards. Understanding and preparing for them is not optional.</p>
+    <div class="row g-4 mt-2" id="hazardsGrid"></div>
+    <div class="text-center mt-5">
+      <a href="#guidelines" class="btn btn-gold">Safety First — View Guidelines</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECORDS ============ -->
+<section id="records" class="section-pad" style="background:#EEF3F1;">
+  <div class="container">
+    <span class="eyebrow">Benchmarks of the Sport</span>
+    <h2 class="section-heading">Mountaineering Records</h2>
+    <p class="section-lede mt-3">A selection of well-documented milestones that shaped the history of high-altitude climbing.</p>
+    <div class="records-filters mt-4">
+      <select id="recordCategoryFilter" class="form-select" style="max-width:220px;"></select>
+    </div>
+    <div class="table-responsive">
+      <table class="table-alpine">
+        <thead>
+          <tr><th>Record</th><th>Value</th><th>Category</th><th>Country</th></tr>
+        </thead>
+        <tbody id="recordsTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPEDITIONS / ORGANIZATIONS / MAP / STORIES ============ -->
+<section id="expeditions" class="section-pad">
+  <div class="container">
+    <span class="eyebrow">Who Makes It Possible</span>
+    <h2 class="section-heading">Organizations &amp; Clubs</h2>
+    <p class="section-lede mt-3">Mountaineering clubs and expedition organizations provide training, logistics, and community for climbers worldwide.</p>
+    <div id="leaflet-map" class="mt-4 mb-5"></div>
+    <div class="row g-4" id="orgCardsGrid"></div>
+
+    <div class="mt-5 pt-4">
+      <span class="eyebrow">Told From the Mountain</span>
+      <h2 class="section-heading">Stories From the Summit</h2>
+      <p class="section-lede mt-3">Real accounts of teams navigating weather, altitude, and uncertainty to reach their objectives.</p>
+      <div class="row g-4 mt-2" id="storiesGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="section-pad bg-dark-section">
+  <div class="container">
+    <span class="eyebrow">Seen From the Ridge</span>
+    <h2 class="section-heading">Photography &amp; Video</h2>
+    <p class="section-lede mt-3">A visual record of mountains, climbers, and the equipment that gets them there.</p>
+    <div class="gallery-filters mt-4" id="galleryFilters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="mountains">Mountains</button>
+      <button data-filter="expeditions">Expeditions</button>
+      <button data-filter="climbers">Climbers</button>
+      <button data-filter="equipment">Equipment</button>
+      <button data-filter="nature">Nature</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+
+    <div class="mt-5 pt-3">
+      <h3 class="h4" style="color:var(--snow);">Field Footage</h3>
+      <div class="row g-4 mt-1" id="videosGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LATEST DEVELOPMENTS ============ -->
+<section id="developments" class="section-pad">
+  <div class="container">
+    <span class="eyebrow">Staying Current</span>
+    <h2 class="section-heading">Latest From the Mountains</h2>
+    <p class="section-lede mt-3">Recent developments in equipment, conservation, safety, and the climbing community.</p>
+    <div class="row g-3 mt-3 mb-4">
+      <div class="col-md-6">
+        <input type="text" id="devSearchInput" class="form-control" placeholder="Search developments...">
+      </div>
+      <div class="col-md-4">
+        <select id="devCategoryFilter" class="form-select"></select>
+      </div>
+    </div>
+    <div class="row g-4" id="developmentsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ MOUNTAIN EXPLORER ============ -->
+<section id="explorer" class="section-pad" style="background:#EEF3F1;">
+  <div class="container">
+    <span class="eyebrow">Find Your Objective</span>
+    <h2 class="section-heading">Mountain Explorer</h2>
+    <p class="section-lede mt-3">Search and filter mountains worldwide by name, country, difficulty, and season.</p>
+    <div class="explorer-search mt-4">
+      <div class="row g-3">
+        <div class="col-md-5">
+          <input type="text" id="mountainSearchInput" class="form-control" placeholder="Search by mountain or country...">
+        </div>
+        <div class="col-md-3">
+          <select id="mountainCountryFilter" class="form-select"></select>
+        </div>
+        <div class="col-md-3">
+          <select id="mountainDifficultyFilter" class="form-select"></select>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-1" id="mountainsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ EXPEDITION CONDITIONS ============ -->
+<section class="section-pad bg-dark-section">
+  <div class="container">
+    <span class="eyebrow">Demonstration Data</span>
+    <h2 class="section-heading">Expedition Conditions</h2>
+    <p class="section-lede mt-3">A sample of the kind of on-mountain conditions summary teams reference before setting out. This is static demonstration data, not a live feed.</p>
+    <div class="conditions-card mt-4" id="conditionsCard"></div>
+  </div>
+</section>
+
+<!-- ============ ESSENTIAL GEAR ============ -->
+<section class="section-pad">
+  <div class="container">
+    <span class="eyebrow">Packing List</span>
+    <h2 class="section-heading">Essential Gear</h2>
+    <p class="section-lede mt-3">A starting checklist of equipment categories every expedition should account for.</p>
+    <div class="row g-4 mt-2" id="equipmentGrid"></div>
+  </div>
+</section>
+
+<!-- ============ GUIDELINES ============ -->
+<section id="guidelines" class="section-pad" style="background:#EEF3F1;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <span class="eyebrow">Before You Go</span>
+        <h2 class="section-heading">General Guidelines</h2>
+        <p class="section-lede mt-3">A practical checklist covering preparation, safety, and responsible climbing practice. Your progress is saved in this browser.</p>
+        <ul class="checklist mt-4" id="guidelinesChecklist"></ul>
+        <button class="btn btn-outline-secondary mt-2" id="printChecklistBtn"><i class="bi bi-printer me-2"></i>Print Checklist</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer-alpine">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5>ALPINE ASCENTS</h5>
+        <p style="max-width:320px;">A mountaineering and adventure portal covering climbing history, technique, hazards, and expeditions for climbers of every level.</p>
+        <div class="social-icons mt-3">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Explore</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#about">About</a></li>
+          <li class="mb-2"><a href="#history">History</a></li>
+          <li class="mb-2"><a href="#expeditions">Expeditions</a></li>
+          <li class="mb-2"><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Resources</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#guidelines">Guidelines</a></li>
+          <li class="mb-2"><a href="#hazards">Safety</a></li>
+          <li class="mb-2"><a href="#records">Records</a></li>
+          <li class="mb-2"><a href="#explorer">Mountain Explorer</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Stay Connected</h5>
+        <p>Get mountain stories in your inbox.</p>
+        <form class="newsletter" id="newsletterForm">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email address" required>
+            <button class="btn btn-gold" type="submit">Subscribe</button>
+          </div>
+          <div class="form-text text-success d-none mt-2" id="newsletterMsg"></div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; 2026 Alpine Ascents. All Rights Reserved.</span>
+      <span>Academic eProject — Static Demonstration</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BOTTOM TICKER ============ -->
+<div class="bottom-ticker">
+  <div class="ticker-track">
+    <span><i class="bi bi-broadcast live-dot"></i> LIVE</span>
+    <span id="tickerDate">—</span>
+    <span id="tickerTime">—</span>
+    <span>Location: <span id="tickerLocation">Requesting permission…</span></span>
+    <span><i class="bi bi-broadcast live-dot"></i> LIVE</span>
+    <span id="tickerDate2">—</span>
+    <span id="tickerTime2">—</span>
+  </div>
+</div>
+
+<!-- ============ BACK TO TOP ============ -->
+<button id="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- ============ SEARCH OVERLAY ============ -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
+  <input type="text" id="searchInput" placeholder="Search mountains, techniques, records..." autocomplete="off">
+  <div class="search-results" id="searchResults"></div>
+</div>
+
+<!-- ============ DETAIL MODAL ============ -->
+<div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+
+<script src="js/utilities.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/map.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+  // Mirror ticker values into the secondary span pair for seamless marquee looping
+  setInterval(function () {
+    var d = document.getElementById('tickerDate');
+    var t = document.getElementById('tickerTime');
+    var d2 = document.getElementById('tickerDate2');
+    var t2 = document.getElementById('tickerTime2');
+    if (d && d2) d2.textContent = d.textContent;
+    if (t && t2) t2.textContent = t.textContent;
+  }, 1000);
+
+  // Mirror visitor count into mobile menu chip
+  document.addEventListener('DOMContentLoaded', function () {
+    var obs = new MutationObserver(function () {
+      var main = document.getElementById('visitorCount');
+      var mobile = document.getElementById('visitorCountMobile');
+      if (main && mobile) mobile.textContent = main.textContent;
+    });
+    var target = document.getElementById('visitorCount');
+    if (target) obs.observe(target, { childList: true });
+  });
+</script>
+
+</body>
+</html>

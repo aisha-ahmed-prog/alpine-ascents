@@ -1,0 +1,11 @@
+[
+  { "id": "gl1", "category": "Physical Preparation", "text": "Train cardiovascular endurance and leg strength well in advance, and simulate carrying a loaded pack on varied terrain." },
+  { "id": "gl2", "category": "Equipment Checklist", "text": "Inspect and test all technical gear, including ropes, harnesses, and crampons, before departure and again at base camp." },
+  { "id": "gl3", "category": "Weather Awareness", "text": "Check multiple forecast sources and understand how local topography can alter weather patterns on the mountain." },
+  { "id": "gl4", "category": "Route Planning", "text": "Study the route in detail, identify escape options, and set clear turnaround times before leaving camp." },
+  { "id": "gl5", "category": "Emergency Preparation", "text": "Carry a first-aid kit, communication device, and a clear emergency plan known to every member of the team." },
+  { "id": "gl6", "category": "Leave No Trace", "text": "Pack out all waste, minimise campsite impact, and respect wildlife and local communities near the mountain." },
+  { "id": "gl7", "category": "Communication", "text": "Establish check-in times with a base contact and carry a satellite communicator where cellular coverage is unavailable." },
+  { "id": "gl8", "category": "Team Management", "text": "Agree on decision-making processes in advance, and empower any member to call for a turnaround if conditions warrant." },
+  { "id": "gl9", "category": "Responsible Climbing", "text": "Respect permit systems, local guiding regulations, and the cultural significance many mountains hold for local communities." }
+]

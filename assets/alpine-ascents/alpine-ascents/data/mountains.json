@@ -7,6 +7,6 @@
   { "name": "Ama Dablam", "country": "Nepal", "elevation": 6812, "difficulty": "Advanced", "season": "October – November", "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80" },
   { "name": "Aconcagua", "country": "Argentina", "elevation": 6961, "difficulty": "Intermediate", "season": "December – February", "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80" },
   { "name": "Cerro Torre", "country": "Argentina / Chile", "elevation": 3128, "difficulty": "Expert", "season": "January – March", "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80" },
-  { "name": "Mount Kilimanjaro", "country": "Tanzania", "elevation": 5895, "difficulty": "Beginner", "season": "January – March, June – October", "image": "https://images.unsplash.com/photo-1590159247828-50db87c9228e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { "name": "Mount Kilimanjaro", "country": "Tanzania", "elevation": 5895, "difficulty": "Beginner", "season": "January – March, June – October", "image": "https://images.unsplash.com/photo-1516592066896-6f6427a1a26e?auto=format&fit=crop&w=800&q=80" },
   { "name": "Mount Cook / Aoraki", "country": "New Zealand", "elevation": 3724, "difficulty": "Advanced", "season": "December – February", "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=800&q=80" }
 ]

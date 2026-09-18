@@ -1,14 +1,74 @@
 [
-  { "id": "g1", "category": "mountains", "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=800&q=80", "caption": "Alpenglow on a granite ridge" },
-  { "id": "g2", "category": "climbers", "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=800&q=80", "caption": "A climber working a rock face" },
-  { "id": "g3", "category": "expeditions", "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=800&q=80", "caption": "Team moving toward high camp" },
-  { "id": "g4", "category": "equipment", "image": "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=800&q=80", "caption": "Ice tools ready for a route" },
-  { "id": "g5", "category": "nature", "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80", "caption": "Clouds breaking over the range" },
-  { "id": "g6", "category": "mountains", "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80", "caption": "A jagged Patagonian spire" },
-  { "id": "g7", "category": "expeditions", "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80", "caption": "Base camp at first light" },
-  { "id": "g8", "category": "climbers", "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80", "caption": "Resting between pitches" },
-  { "id": "g9", "category": "nature", "image": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80", "caption": "Snowfields at dusk" },
-  { "id": "g10", "category": "equipment", "image": "https://images.unsplash.com/photo-1602524818701-e575549e8e91?auto=format&fit=crop&w=800&q=80", "caption": "Packed and ready for altitude" },
-  { "id": "g11", "category": "mountains", "image": "https://images.unsplash.com/photo-1516592066896-6f6427a1a26e?auto=format&fit=crop&w=800&q=80", "caption": "First light on the summit ridge" },
-  { "id": "g12", "category": "climbers", "image": "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=800&q=80", "caption": "Traversing an exposed slab" }
+  {
+    "id": "g1",
+    "category": "mountains",
+    "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=800&q=80",
+    "caption": "Alpenglow on a granite ridge"
+  },
+  {
+    "id": "g2",
+    "category": "climbers",
+    "image": "https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=800&q=80",
+    "caption": "A climber working a rock face"
+  },
+  {
+    "id": "g3",
+    "category": "expeditions",
+    "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=800&q=80",
+    "caption": "Team moving toward high camp"
+  },
+  {
+    "id": "g4",
+    "category": "equipment",
+    "image": "https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=800&q=80",
+    "caption": "Ice tools ready for a route"
+  },
+  {
+    "id": "g5",
+    "category": "nature",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    "caption": "Clouds breaking over the range"
+  },
+  {
+    "id": "g6",
+    "category": "mountains",
+    "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80",
+    "caption": "A jagged Patagonian spire"
+  },
+  {
+    "id": "g7",
+    "category": "expeditions",
+    "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80",
+    "caption": "Base camp at first light"
+  },
+  {
+    "id": "g8",
+    "category": "climbers",
+    "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    "caption": "Resting between pitches"
+  },
+  {
+    "id": "g9",
+    "category": "nature",
+    "image": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80",
+    "caption": "Snowfields at dusk"
+  },
+  {
+    "id": "g10",
+    "category": "equipment",
+    "image": "https://images.unsplash.com/photo-1780541816779-5e1cfe98272a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "caption": "Packed and ready for altitude"
+  },
+  {
+    "id": "g11",
+    "category": "mountains",
+    "image": "https://plus.unsplash.com/premium_photo-1727345591421-42648904f18d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "caption": "First light on the summit ridge"
+  },
+  {
+    "id": "g12",
+    "category": "climbers",
+    "image": "https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=800&q=80",
+    "caption": "Traversing an exposed slab"
+  }
 ]

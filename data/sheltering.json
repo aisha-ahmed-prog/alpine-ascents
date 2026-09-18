@@ -1,8 +1,38 @@
 [
-  { "id": "tents", "name": "Mountaineering Tents", "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80", "description": "Four-season tents engineered with reinforced poles and low profiles to withstand high winds and heavy snow loading at altitude." },
-  { "id": "huts", "name": "Mountain Huts", "image": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80", "description": "Staffed or self-service refuges found in ranges such as the Alps, offering climbers shelter, meals, and a base for early summit attempts." },
-  { "id": "basecamp", "name": "Base Camps", "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80", "description": "Established at the foot of a mountain, base camps serve as logistical hubs where teams acclimatise, store supplies, and coordinate the expedition." },
-  { "id": "emergency", "name": "Emergency Shelters", "image": "https://images.unsplash.com/photo-1602524818701-e575549e8e91?auto=format&fit=crop&w=800&q=80", "description": "Compact bivy sacks and space blankets carried as a last resort to preserve body heat if a team is caught out overnight unexpectedly." },
-  { "id": "bivouac", "name": "Bivouac", "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80", "description": "A minimal, often unplanned overnight stop on route, using whatever natural or portable shelter is available to wait out darkness or weather." },
-  { "id": "highcamp", "name": "High-Altitude Camps", "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=800&q=80", "description": "A series of progressively higher camps used on major peaks to aid acclimatisation and shorten the final push to the summit." }
+  {
+    "id": "tents",
+    "name": "Mountaineering Tents",
+    "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    "description": "Four-season tents engineered with reinforced poles and low profiles to withstand high winds and heavy snow loading at altitude."
+  },
+  {
+    "id": "huts",
+    "name": "Mountain Huts",
+    "image": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80",
+    "description": "Staffed or self-service refuges found in ranges such as the Alps, offering climbers shelter, meals, and a base for early summit attempts."
+  },
+  {
+    "id": "basecamp",
+    "name": "Base Camps",
+    "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80",
+    "description": "Established at the foot of a mountain, base camps serve as logistical hubs where teams acclimatise, store supplies, and coordinate the expedition."
+  },
+  {
+    "id": "emergency",
+    "name": "Emergency Shelters",
+    "image": "https://plus.unsplash.com/premium_photo-1663045423469-aade0c24bd6a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Compact bivy sacks and space blankets carried as a last resort to preserve body heat if a team is caught out overnight unexpectedly."
+  },
+  {
+    "id": "bivouac",
+    "name": "Bivouac",
+    "image": "https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?auto=format&fit=crop&w=800&q=80",
+    "description": "A minimal, often unplanned overnight stop on route, using whatever natural or portable shelter is available to wait out darkness or weather."
+  },
+  {
+    "id": "highcamp",
+    "name": "High-Altitude Camps",
+    "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=800&q=80",
+    "description": "A series of progressively higher camps used on major peaks to aid acclimatisation and shorten the final push to the summit."
+  }
 ]
