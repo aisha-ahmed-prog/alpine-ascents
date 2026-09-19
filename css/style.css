@@ -51,9 +51,9 @@ h1, h2, h3, h4, .font-head {
   text-transform: capitalize;
 }
 
-[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4 {
+/* [data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4 {
   color: var(--snow);
-}
+} */
 
 a { text-decoration: none; }
 
@@ -71,6 +71,7 @@ img { max-width: 100%; }
   font-size: clamp(1.9rem, 3vw, 2.6rem);
   font-weight: 700;
   line-height: 1.15;
+  color: var(--text);
   margin-top: 0.5rem;
 }
 
@@ -85,9 +86,14 @@ img { max-width: 100%; }
   background: linear-gradient(160deg, var(--dark), var(--forest) 140%);
   color: #C9D6D9;
 }
-.bg-dark-section h2, .bg-dark-section h3, .bg-dark-section h4 { color: var(--snow); }
+.bg-dark-section h2, .bg-dark-section h3, .bg-dark-section h4 { color: #F7F9F8; }
 .bg-dark-section .section-lede { color: #9FB4B9; }
 
+
+#devCategoryFilter,#devSearchInput,#devSearchInput::placeholder ,#mountainDifficultyFilter,#mountainCountryFilter,#mountainSearchInput,#mountainSearchInput::placeholder{
+  background-color: var(--snow);  
+  color: var(--text);
+}
 .btn-gold {
   background: var(--gold);
   color: var(--navy);
@@ -97,11 +103,14 @@ img { max-width: 100%; }
   border-radius: var(--radius-s);
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(214,168,79,0.35); color: var(--navy); }
+.btn-gold:hover { transform: translateY(-2px);}
 
+.btn:hover{
+  background: var(--gold);
+}
 .btn-outline-snow {
   border: 1px solid rgba(247,249,248,0.6);
-  color: var(--snow);
+  color: #fff;
   padding: 0.85rem 1.9rem;
   border-radius: var(--radius-s);
   font-weight: 600;
@@ -177,7 +186,7 @@ img { max-width: 100%; }
 }
 .navbar-alpine .navbar-brand {
   font-family: var(--font-head);
-  color: var(--snow);
+  color: rgba(247,249,248,0.82);
   font-weight: 700;
   letter-spacing: 0.08em;
   font-size: 1.15rem;
@@ -206,7 +215,7 @@ img { max-width: 100%; }
 .navbar-alpine .nav-link.active::after { width: 100%; }
 
 .nav-icon-btn {
-  background: none; border: none; color: var(--snow);
+  background: none; border: none; color: #fff;
   font-size: 1.1rem; padding: 0.3rem 0.5rem;
   transition: color var(--transition);
 }
@@ -214,7 +223,8 @@ img { max-width: 100%; }
 
 .visitor-chip {
   display: flex; align-items: center; gap: 0.5rem;
-  color: var(--snow); font-size: 0.8rem;
+  color: #fff;
+   font-size: 0.8rem;
   border-left: 1px solid rgba(247,249,248,0.25);
   padding-left: 0.9rem; margin-left: 0.3rem;
 }
@@ -341,7 +351,7 @@ img { max-width: 100%; }
 .style-card .body, .org-card .body, .story-card .body, .gear-card .body { padding: 1.3rem 1.4rem; }
 .tag-pill {
   display: inline-block; font-size: 0.72rem; font-weight: 600;
-  color: var(--forest); background: rgba(79,163,199,0.14);
+  color: var(--text); background: rgba(79,163,199,0.14);
   padding: 0.2rem 0.6rem; border-radius: 20px; margin-right: 0.3rem;
 }
 
@@ -352,7 +362,7 @@ img { max-width: 100%; }
   color: var(--text); padding: 0.55rem 1.1rem; border-radius: 30px;
   font-size: 0.88rem; font-weight: 500; transition: all var(--transition);
 }
-.tech-tab-btn.active, .tech-tab-btn:hover { background: var(--forest); color: var(--snow); border-color: var(--forest); }
+.tech-tab-btn.active, .tech-tab-btn:hover { background: var(--forest); color: #ffff; border-color: var(--forest); }
 .tech-detail-panel {
   background: #fff; border-radius: var(--radius-m); padding: 2rem;
   box-shadow: 0 6px 18px rgba(8,21,29,0.08);
@@ -368,8 +378,10 @@ img { max-width: 100%; }
   position: absolute; inset: 0;
   background: linear-gradient(180deg, transparent 40%, rgba(8,21,29,0.9) 100%);
   display: flex; align-items: flex-end; padding: 1.2rem;
-  color: var(--snow);
+  color: #F7F9F8;
 }
+
+
 
 /* ---------- HAZARDS ---------- */
 .hazard-card {
@@ -393,7 +405,7 @@ img { max-width: 100%; }
 .records-filters { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.6rem; }
 .records-filters select {
   border: 1px solid rgba(107,122,128,0.3); border-radius: var(--radius-s);
-  padding: 0.5rem 0.8rem; font-size: 0.88rem; background: #fff; color: var(--text);
+  padding: 0.5rem 0.8rem; font-size: 0.88rem; background: var(--snow); color: var(--text);
 }
 .table-alpine { width: 100%; border-collapse: collapse; background: #fff; border-radius: var(--radius-m); overflow: hidden; }
 [data-theme="dark"] .table-alpine { background: #102730; }
@@ -410,7 +422,7 @@ img { max-width: 100%; }
 /* ---------- GALLERY ---------- */
 .gallery-filters { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.8rem; }
 .gallery-filters button {
-  border: 1px solid rgba(23,63,53,0.2); background: transparent; color: var(--text);
+  border: 1px solid rgba(23,63,53,0.2); background: transparent; color: #E7EEF0;
   padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.85rem; transition: all var(--transition);
 }
 .gallery-filters button.active, .gallery-filters button:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
@@ -422,7 +434,7 @@ img { max-width: 100%; }
 .gallery-item .caption {
   position: absolute; inset: auto 0 0 0; padding: 0.7rem 0.9rem;
   background: linear-gradient(0deg, rgba(8,21,29,0.85), transparent);
-  color: var(--snow); font-size: 0.82rem; opacity: 0; transition: opacity var(--transition);
+  color: #F7F9F8; font-size: 0.82rem; opacity: 0; transition: opacity var(--transition);
 }
 .gallery-item:hover .caption { opacity: 1; }
 
@@ -517,7 +529,7 @@ img { max-width: 100%; }
 /* ---------- BOTTOM TICKER ---------- */
 .bottom-ticker {
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000;
-  background: var(--dark); color: var(--snow);
+  background: var(--dark); color: #F7F9F8;
   padding: 0.55rem 0; overflow: hidden; white-space: nowrap;
   font-size: 0.82rem; border-top: 1px solid rgba(247,249,248,0.08);
 }
@@ -528,7 +540,7 @@ img { max-width: 100%; }
 
 /* ---------- FOOTER ---------- */
 .footer-alpine { background: var(--dark); color: rgba(247,249,248,0.72); padding: 4.5rem 0 6rem; }
-.footer-alpine h5 { color: var(--snow); font-family: var(--font-head); margin-bottom: 1.1rem; font-size: 1rem; }
+.footer-alpine h5 { color: #F7F9F8; font-family: var(--font-head); margin-bottom: 1.1rem; font-size: 1rem; }
 .footer-alpine a { color: rgba(247,249,248,0.65); }
 .footer-alpine a:hover { color: var(--gold); }
 .footer-alpine .social-icons a {
